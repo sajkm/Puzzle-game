@@ -1,0 +1,52 @@
+.game{
+    position: relative;
+
+}
+.board{
+    display: grid;
+    grid-template-columns: repeat(4,var(--size));
+    grid-template-rows: repeat(4,var(--size));
+    border-radius: 10px solid;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 10px solid;
+}
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+  
+button{
+    border: 0 transparent;
+    background-color: var(--correct);
+    color:white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 10px solid black;
+
+
+}
+  
+button:hover{
+    background-color: var(--tile);
+}
+  
+.winner{
+    position: absolute;
+    background: var(--tile);
+    border-radius: 10px;
+    top: 0;
+    z-index: 100;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}

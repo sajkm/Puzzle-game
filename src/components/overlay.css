@@ -1,0 +1,7 @@
+.overlay{
+    border: 10px solid;
+    border-color: rgb(0, 0, 0);
+    pointer-events: none;   
+    border-radius: 10px;
+    z-index: 1;
+}
